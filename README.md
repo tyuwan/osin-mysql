@@ -1,4 +1,4 @@
-# osin-mysql 
+# osin-mysql
 
 ![Travis](https://travis-ci.org/felipeweb/osin-mysql.svg?branch=master) [![GoDoc](https://godoc.org/github.com/felipeweb/osin-mysql?status.svg)](https://godoc.org/github.com/felipeweb/osin-mysql)
 
@@ -39,7 +39,7 @@ import (
 )
 
 func main() {
-    url := "user:password@tcp(host:3306)/dbname"
+    url := "user:password@tcp(host:3306)/dbname?parseTime=true"
 	db, err = sql.Open("mysql", url)
     if err != nil {
         return nil, err
